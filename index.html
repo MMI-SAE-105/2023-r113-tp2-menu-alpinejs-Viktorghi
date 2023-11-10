@@ -37,7 +37,6 @@
       >
         menu
       </button>
-      <h1>Test de menu</h1>
       <nav id="mainNav" x-show="menuIsOpen" 
       x-transition.duration.800ms
       class="menu"
@@ -50,12 +49,18 @@
       </nav>
     </header>
     <!-- h2>lorem2^p>lorem -->
-    <h2>Lorem, ipsum.</h2>
-    <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
-      mollitia adipisci alias error laboriosam numquam incidunt magni eum eos
-      nemo aliquid pariatur quam voluptates animi laudantium, aperiam
-      consectetur nobis enim.
-    </p>
+    <h2>Accordéon</h2>
+    <dl x-data="{dd1: false}">
+      <dt>Titre1</dt>
+      <dd x-show="dd1">Lorem ipsum dolor sit amet.</dd>
+    </dl>
+    <dl x-data="{dd2: false}">
+      <dt>Titre2</dt>
+      <dd x-show="dd2">Commodi cum eligendi distinctio explicabo.</dd>
+    </dl>
+    <dl x-data="{dd3: false}">
+      <dt>Titre2</dt>
+      <dd x-show="dd3">Officiis, dolorem. Velit, obcaecati enim!</dd>
+    </dl>
   </body>
 </html>
