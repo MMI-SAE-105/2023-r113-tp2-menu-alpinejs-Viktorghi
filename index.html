@@ -51,15 +51,15 @@
     <!-- h2>lorem2^p>lorem -->
     <h2>Accordéon</h2>
     <dl x-data="{isOpen: false}">
-      <dt>Titre1</dt>
+      <dt><button @click="isOpen = !isOpen">Titre1</button></dt>
       <dd x-show="isOpen">Lorem ipsum dolor sit amet.</dd>
     </dl>
     <dl x-data="{isOpen: false}">
-      <dt>Titre2</dt>
+      <dt><button @click="isOpen = !isOpen">Titre2</button></dt>
       <dd x-show="isOpen">Commodi cum eligendi distinctio explicabo.</dd>
     </dl>
     <dl x-data="{isOpen: false}">
-      <dt>Titre2</dt>
+      <dt><button @click="isOpen = !isOpen">Titre3</button></dt>
       <dd x-show="isOpen">Officiis, dolorem. Velit, obcaecati enim!</dd>
     </dl>
   </body>
