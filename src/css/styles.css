@@ -2,7 +2,3 @@
   width: 100%;
   height: auto;
 }
-
-nav > ul > li > a::before {
-  content: url("../../public/icones/arrow.svg");
-}
