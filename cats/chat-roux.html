@@ -1,14 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page chat roux</title>
+    <title>Accueil pages des chats</title>
     <link rel="stylesheet" href="../src/css/styles.css" />
+    <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
+
 <body>
+    <header>
+        <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
+            <img src="../public/icones/menu.svg" alt="menu">
+        </button>
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+            <ul>
+                <li><a href="../index.html">Accueil du site</a></li>
+                <li><a href="../cats/index.html">Accueil des chats</a></li>
+                <ul>
+                    <li><a href="../cats/chat-blanc-gris.html">Page chat blanc gris</a></li>
+                    <li><a href="../cats/chat-roux.html">Page chat roux</a></li>
+                </ul>
+                <li><a href="../dogs/index.html">Accueil des chiens</a></li>
+                <ul>
+                    <li><a href="../dogs/chien-blanc.html">Page chien blanc</a></li>
+                    <li><a href="../dogs/chien-marron.html">Page chien marron</a></li>
+                </ul>
+            </ul>
+        </nav>
+    </header>
     <h1>Chat roux</h1>
-    <a href="index.html">Accueil des chats</a>
-    <img class="media media--fullwidth" src="../public/img/cats/Chat_roux.jpg" alt="image chat roux">
+    <img class="media media--fullwidth" src="../public/img/cats/Chat_roux.jpg" alt="Chat roux">
 </body>
+
 </html>
