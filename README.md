@@ -1,3 +1,3 @@
 - nom : Ghirardelli
 - prénom : Viktor
-- URL publique du site : https://tp2-menu-alpinejs-viktorghi.netlify.app
+- URL publique du site : http://tp2-menu-alpinejs.viktorghirardelli.fr/
